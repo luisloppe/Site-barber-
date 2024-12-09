@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+:root{
+    --main-color: #000;
+    --text-color: #ffffff;
+    --bg-color-01: #000;
+    --bg-color-02: #348893;
+    --color-00: #28353E;
+
+    /* extra */
+    --color-1: #000;
+    --color-2: #456789;
+    --color-3: #123476;
+    --color-4: #000000;
+    --color-5: #ff1515;
+    --color-6: #348893;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline:none;
+    scroll-behavior: smooth;
+}
+
+
+html{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+body {
+   
+    font-size: large;
+    background-color:var(--bg-color-01);
+    color: var(--text-color);
+    text-align: center;
+    
+}
+section{
+    min-height: 100vh;
+    padding: 4rem 4rem 2rem;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+}
+
+span{
+    color: var(--color-5);
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+/* header barbearia */
+li{
+    font-family: "Shrikhand"; 
+    font-weight: 400;
+    font-size: 1.2rem;  
+}
+
+li:hover{
+    font-size: 1.214rem;
+    position: sticky;
+}
+
+li a{
+    color: #ffffff;
+}
+
+li a:hover{
+    color: #348893;
+}
+
+header .logos{
+    background-color:var(--bg-color-01);
+}
+
+.logos {
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    border-bottom: solid 5px var(--color-6) ;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+
+    align-items: center;
+    text-align: center;
+
+    
+
+}
+
+.griffe{
+    width: 33%;
+    font-weight: 700;
+    font-size: 1.8rem;
+    font-family:"Shrikhand" ;
+    
+}
+.griffe a{
+    color: #ffffff;
+}
+.logotipo{
+    width: 33%;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center; */
+    
+}
+.vazio{
+    width: 33%;
+    
+}
+
+.logotipo img{
+    width: 140px;
+    
+
+}
+
+.nav-menu{
+    display: inline ;
+
+
+    
+}
+
+.nav-menu li{
+    display: inline;
+    padding: 1.4rem;
+
+}
+.nav-menu ul{
+    margin-top: 1.1rem;
+}
+
+
+.linhaprimaria{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+.linha{
+    height: 2px;
+
+    width: 100%;
+    border-radius: 0 0 ;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content:center ;
+
+}
+/* header barbearia */
+
+/* css produtos */
+
+.produtos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-images{
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.slider-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    border:solid var(--bg-color-02);
+}
+
+.slider-img{
+    width: 110px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.7s ease;
+}
+
+.slider-images .slider-img:nth-child(1), .slider-images .slider-img:nth-child(4){
+    height: 480px;
+}
+
+.slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(3){
+    height: 560px;
+}
+
+.slider-img h1{
+    font-family:"Gabarito" ;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: rotate(270deg);
+    transition: 0.7 ease;
+}
+
+.details{
+    position: absolute;
+    bottom: 43px ;
+    left: 43px;
+}
+
+.details h2 {
+    font-family:"Gabarito" ;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 44px;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: 0.7 ease;
+}
+
+.details p {
+    font-family:"Gabarito" ;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 33px;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: 0.7 ease;
+}
+
+.slider-img.active{
+    width: 47.87rem !important;
+    height: 46.87rem !important;
+    border:solid var(--bg-color-02);
+}
+
+.slider-img.active h1{
+    display: none;
+
+}
+
+.slider-img.active .details p, .slider-img.active .details h2{
+    display: block;
+}  
+/* css produtos */
+
+/* home */
+.home {
+    display: flex;
+    width: 100%;
+    height: 80vh; /* Ocupa toda a altura da viewport */
+    margin-top: 2rem;
+    padding-top: 0;
+    background: linear-gradient(to right, 
+        rgba(0, 0, 0, 0.7) 0%,      /* Cor do lado esquerdo */
+        rgba(0, 0, 0, 0.0) 50%,    /* Transição suave no meio */
+        rgba(18, 52, 118, 0.8) 100% /* Cor do lado direito */
+    );
+    border-bottom: solid var(--bg-color-02) ;
+}
+
+.lado-esquerdo,
+.lado-direito {
+    flex: 1; /* Divide o espaço igualmente entre os lados */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.lado-esquerdo {
+    z-index: 1; /* Garante que o conteúdo fique acima do gradiente */
+    overflow: hidden;
+}
+
+.lado-esquerdo img {
+    width: 100%;
+    height: 100%; /* Garante que a imagem preencha completamente */
+    object-fit: cover; /* Mantém as proporções da imagem */
+}
+
+.lado-direito {
+    z-index: 1; /* Garante que o texto fique acima do gradiente */
+    background-color: transparent; /* Fundo do lado direito transparente */
+    color: #ffffff; /* Cor do texto */
+    text-align: center; /* Alinha o texto horizontalmente */
+}
+
+.lado-direito h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    max-width: 80%; /* Limita a largura do texto */
+}

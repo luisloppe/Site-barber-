@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>D'Griffe</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="icon d'griffe" type="image/x-icon">
+    <!--site de icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <!--site de icons-->
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
+    <script src='/js/script.js'></script>
+</head>
+<body>
+     <!-- cabeçalhos -->
+     <header>
+        <div class="logos">
+            <div class="griffe">
+                <a href="#" class="letreiro">D<span>'</span>GRIFFE</a>
+            </div>
+            <div class="logotipo">
+                <img src="img/logotipo.png" alt="logo tipo"> <!--mudar logo-->
+            </div>
+            <div class="vazio">
+                <img src="" alt=""> <!--mudar logo-->
+            </div>
+        </div>
+        <div class="linhaprimaria">
+            <div class="linha">
+                
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#serviços">Serviços</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="/agendar">Agendar</a></li>
+                <li><a href="#localização">Localização</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul> 
+        </nav>
+    </header>
+    
+
+<!-- home -->
+ <section class="home" id="home">
+    <div class="lado-esquerdo">
+        <img src="/img/entro.jfif" alt="">
+      </div>
+      <div class="lado-direito">
+        <h2>Conheça nossos serviços</h2>
+      </div>
+ </section>
+<!--serviços-->
+ <section class="serviços" id="serviços">
+    <div class="service">
+        <img src="#" alt=" Corte">
+        <div class="service-content">
+            <h4>Corte</h4>
+            <p> corte, valorizando seus traços.</p>
+            <a href="#" class="btn">Ver Serviço</a>
+        </div>
+    </div>
+    <div class="service">
+        <img src="#" alt=" Barba">
+        <div class="service-content">
+            <h4>Barba</h4>
+            <p> barba, com navalha.</p>
+            <a href="#" class="btn">Ver Serviço</a>
+        </div>
+    </div>
+ </section>
+ <!--produtos( tem q fazer o basico desse aq)-->
+ <section class="produtos" id="produtos"> 
+    <div class="slider-images">
+        <div class="slider-img">
+            <img src="/img/logotipo.png" alt="1">
+            <h1>Pomada</h1>
+            <div class="details">
+            <h2>Pomada</h2>
+            <p>produto de massagem</p>
+            </div>
+        </div>
+        <div class="slider-img">
+            <img src="/img/logotipo.png" alt="2">
+            <h1>Perfume</h1>
+            <div class="details">
+            <h2>Perfume</h2>
+            <p>produto aromatizante corporal </p>
+            </div>
+        </div>
+        <div class="slider-img">
+            <img src="/img/logotipo.png" alt="3">
+            <h1>Gel</h1>
+            <div class="details">
+            <h2>Gel</h2>
+            <p>produto de definição capilar</p>
+            </div>
+        </div>
+        <div class="slider-img">
+            <img src="/img/logotipo.png" alt="4">
+            <h1>Desodorante</h1>
+            <div class="details">
+            <h2>Desodorante</h2>
+            <p>produto de combate ao odor</p>
+            </div>
+        </div>
+    </div>
+
+ </section>
+<!--localização-->
+ <section class="localização" id="localização">
+    <div class="box-localizacao">
+        <h1>Encontre a Barbearia D'Griffe</h1><!--Sempre que "D'GRIFFE" aparecer botar essa fonte "font-family: Garamond, serif"-->
+        <div class="box-img-localizacao">
+            <img src="#" alt="fachada da Barbearia">
+        </div>
+        <div class="box-inf-localizacao">
+            <h1>D'Griffe</h1><!--Sempre que "D'GRIFFE" aparecer botar essa fonte "font-family: Garamond, serif"-->
+            <h3>Gravaitaí-RS-Brasil</h3>
+            <h3>local da avenida</h3> <!--colocar a localização correta-->
+            <h3>telefone</h3> <!--colocar telefone-->
+            <div class="midias-sociais">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                   <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class='bx bx-map' ></i>
+                </a>
+             </div>
+        </div>
+    </div>
+    
+ </section>
+ <footer>
+    <p> Copyright&copy; 2024 por &lt;Luis Gustavo & Luis Ronaldo&gt;. Todos os direitos reservados.</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+            // Remove a classe 'active' de todos os itens
+            $(".slider-img").removeClass("active");
+
+            // Adiciona a classe 'active' apenas ao item clicado
+            $(this).addClass("active");
+
+            // Exemplo: Mostrar detalhes do item clicado (se necessário)
+            $(".details").hide(); // Esconde todos os detalhes
+            $(this).find(".details").show(); // Mostra os detalhes do item clicado
+        });
+    });
+</script>
+</body>
+</html>
